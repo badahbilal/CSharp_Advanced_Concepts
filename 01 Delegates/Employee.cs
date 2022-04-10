@@ -17,7 +17,7 @@ namespace _01_Delegates
         {
             foreach (var employe in employees)
             {
-                if (siAugment(employe))
+                if (siAugment.Invoke(employe))
                 {
                     Console.WriteLine($"Bonjour {employe.Name} vous avez une augmentation de 1000 dh : {employe.Salary+1000}");
                 }
